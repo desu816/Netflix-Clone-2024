@@ -1,0 +1,53 @@
+.header_outer_container {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    height: 10vh;
+    color: white;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+}
+
+.header_container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Align the left and right sections */
+.header_left ul,
+.header_right ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Adds space between items */
+    padding: 0;
+    margin: 0;
+}
+
+.header_left ul li, .header_right ul li {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+}
+
+.header_right ul li {
+    cursor: pointer;
+}
+
+.header_left img {
+    margin-right: 10px; /* Adds spacing to the right of the logo */
+}
+
+.header_left ul li:not(:first-child) {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.header_left ul li:hover, .header_right ul li:hover {
+    color: gray; /* Adds hover effect */
+}
