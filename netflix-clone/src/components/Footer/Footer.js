@@ -43,7 +43,9 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className='service_code'>
-                    <p>Service Code</p>
+                    <p>
+                        Service Code
+                    </p>
                 </div>
             </div>
             <div className='copy-write'>
